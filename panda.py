@@ -31,8 +31,8 @@ price_USD = df['price'].apply(lambda price: price/kurs)
 df["price"] = price_USD
 print(df)
 
-plt.bar(df.index, df["price"])
-df["price"].plot(kind='line')
+plt.plot(df.index, df["price"])
+
 
 
 
