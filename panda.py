@@ -33,6 +33,12 @@ print(df)
 
 plt.plot(df.index, df["price"])
 
+plt.plot(df.index, df["price"])
+fig, ax = plt.subplots(figsize=(10,8))
+res = ax.plot(df.index, df["price"])
+line = res[0]
+line.set_c('#d1371f')
+line.set_linestyle('dashed')
 
 
 
